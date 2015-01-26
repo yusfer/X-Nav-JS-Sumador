@@ -1,10 +1,12 @@
-function changer (id, newValue) {
-		 var element = document.getElementById(id);
-		 element.innerHTML = newValue;
-	   }
-	   function adder (sumtag, restag) {
-		 var operation = document.getElementById(sumtag);
-		 var operands = operation.innerHTML.split ("+");
-		 var result = parseInt(operands[0]) + parseInt(operands[1]);
-		 changer (restag, '=' + result);
-	   }
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jscalculator.js"></script>
+		<meta charset="utf-8" />
+		<title> Sumador simple </title>
+	</head>
+	<body>
+		<p>Adder...<span id='op'>12+58</span>
+		<span id="res"></span> <a href="javascript:sumador('op','res')">Add!</a></p>
+	</body>
+</html>
